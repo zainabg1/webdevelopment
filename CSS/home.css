@@ -18,6 +18,13 @@
     --dark-color: #0D0D0D;
 }
 
+/* Wrapper voor ALLE pagina’s */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 html {
     font-size: 16px;
     overflow-x: hidden;
@@ -30,7 +37,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 120px 9% 32px;
+    padding: 120px 0 32px;
 }
 
 /* Header */
@@ -89,7 +96,7 @@ section {
 }
 
 .home-img img {
-    width: 260px; 
+    width: 260px;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;

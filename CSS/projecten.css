@@ -1,0 +1,65 @@
+.projecten h2 {
+    text-align: center;
+    font-size: 64px; 
+    margin-bottom: 80px;
+    color: var(--text-color);
+}
+
+.projecten-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.projecten-container .projecten-box {
+    flex: 1 1 300px; /* kleinere kaarten */
+    background: var(--snd-bg-color);
+    padding: 48px 24px;
+    border-radius: 24px;
+    text-align: center;
+    border: 3px solid var(--bg-color);
+    transition: 0.3s ease;
+}
+
+.projecten-container .projecten-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.03);
+}
+
+.projecten-box i {
+    font-size: 80px;
+    color: var(--main-color);
+    margin-bottom: 16px;
+}
+
+.projecten-box h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+
+.projecten-box p {
+    font-size: 18px;
+    margin: 16px 24px 32px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 36px;
+    background: var(--main-color);
+    border-radius: 48px;
+    font-size: 18px;
+    color: var(--bg-color);
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--text-color);
+    box-shadow: 0 0 20px var(--main-color);
+}
