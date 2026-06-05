@@ -1,0 +1,72 @@
+/* Contactsectie */
+.contact {
+    background: var(--bg-color);
+    padding: 120px 0;
+}
+
+/* Titel */
+.contact h2 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 48px;
+    color: var(--main-color);
+}
+
+/* Formulier */
+.contact form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Inputrijen */
+.input-inbox,
+.input-box {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Inputvelden */
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 12px;
+    border: 3px solid var(--main-color);
+    transition: 0.3s ease;
+    resize: none;
+}
+
+/* Hover-effect */
+.contact form input:hover,
+.contact form textarea:hover {
+    border-color: var(--text-color);
+}
+
+/* Berichtveld */
+.contact form textarea {
+    height: 200px;
+}
+
+/* Verstuurknop */
+.btn {
+    align-self: center;
+    padding: 12px 36px;
+    background: var(--main-color);
+    border-radius: 48px;
+    font-size: 18px;
+    color: var(--bg-color);
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--text-color);
+    box-shadow: 0 0 20px var(--main-color);
+}

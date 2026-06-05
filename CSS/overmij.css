@@ -1,50 +1,72 @@
 .about {
+    padding: 120px 0;
+    background-color: var(--bg-color);
+}
+
+/* Titel */
+.about .heading {
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--text-color);
+}
+
+/* Container voor tekst + foto */
+.about-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
-    background-color: var(--bg-color);
+    gap: 40px;
+}
+
+/* Tekstgedeelte */
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    color: var(--text-color);
 }
 
 /* Afbeelding */
 .about-img img {
-    width: 350px; 
-    border: 2px solid var(--main-color);
+    width: 320px;
     border-radius: 50%;
+    border: 2px solid var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
-    cursor: pointer;
     transition: 0.4s ease;
+    cursor: pointer;
 }
 
 .about-img img:hover {
-    box-shadow: 
+    box-shadow:
         0 0 25px var(--main-color),
         0 0 35px var(--main-color),
         0 0 45px var(--main-color);
 }
 
-/* Titel boven de sectie */
-.heading {
-    font-size: 96px;
-    text-align: center;
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 36px;
+    background: var(--main-color);
+    border-radius: 48px;
+    font-size: 18px;
+    color: var(--bg-color);
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
-/* Tekstgedeelte */
-.about-content {
-    padding: 0 64px;
-}
-
-.about-content h2 {
-    text-align: left;
-    line-height: 1.2;
-    font-size: 48px;
-}
-
-.about-content h3 {
-    font-size: 32px;
-}
-
-.about-content p {
-    font-size: 16px;
-    margin: 32px 0 48px;
+.btn:hover {
+    background-color: var(--text-color);
+    box-shadow: 0 0 20px var(--main-color);
 }
