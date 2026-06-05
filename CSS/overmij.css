@@ -1,0 +1,50 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: var(--bg-color);
+}
+
+/* Afbeelding */
+.about-img img {
+    width: 350px; 
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.about-img img:hover {
+    box-shadow: 
+        0 0 25px var(--main-color),
+        0 0 35px var(--main-color),
+        0 0 45px var(--main-color);
+}
+
+/* Titel boven de sectie */
+.heading {
+    font-size: 96px;
+    text-align: center;
+}
+
+/* Tekstgedeelte */
+.about-content {
+    padding: 0 64px;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+    font-size: 48px;
+}
+
+.about-content h3 {
+    font-size: 32px;
+}
+
+.about-content p {
+    font-size: 16px;
+    margin: 32px 0 48px;
+}

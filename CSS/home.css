@@ -9,12 +9,13 @@
     font-family: system-ui, -apple-system, sans-serif;
 }
 
+/* Kleuren */
 :root {
-    --bg-color: #F2F2F2;      /* lichte achtergrond */
-    --snd-bg-color: #F2C4D0;  /* zacht roze accent */
-    --text-color: #400101;    /* diepe bordeaux voor tekst */
-    --main-color: #D9738E;    /* medium roze voor knoppen en highlights */
-    --dark-color: #0D0D0D;    /* bijna zwart voor contrast */
+    --bg-color: #F2F2F2;
+    --snd-bg-color: #F2C4D0;
+    --text-color: #400101;
+    --main-color: #D9738E;
+    --dark-color: #0D0D0D;
 }
 
 html {
@@ -88,7 +89,7 @@ section {
 }
 
 .home-img img {
-    width: 18vw;
+    width: 260px; 
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
@@ -97,9 +98,10 @@ section {
 }
 
 .home-img img:hover {
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 35px var(--main-color),
-                0 0 45px var(--main-color);
+    box-shadow: 
+        0 0 25px var(--main-color),
+        0 0 35px var(--main-color),
+        0 0 45px var(--main-color);
 }
 
 @keyframes floatImage {
