@@ -1,0 +1,164 @@
+.project-detail {
+    max-width: 900px;
+    margin: 120px auto 60px;
+    padding: 20px;
+    background: var(--bg-color);
+}
+
+.project-detail .heading {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.project-detail p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: var(--text-color);
+}
+
+.project-detail ul {
+    margin-left: 20px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.project-detail ul li {
+    margin-bottom: 8px;
+}
+
+.intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* Tools */
+.tools {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.tools span {
+    background: var(--snd-bg-color);
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--dark-color);
+}
+
+/* Project Cards */
+.project-card {
+    background: var(--bg-color);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid var(--snd-bg-color);
+}
+
+.project-card h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.project-icon {
+    font-size: 40px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+/* Highlights */
+.highlights {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.highlights span {
+    background: var(--main-color);
+    color: var(--bg-color);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Screenshots */
+.screenshots {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.screenshot-box {
+    background: none;
+    border-radius: 10px;
+    width: 220px;
+    height: 160px; /* vaste hoogte, maakt het roze vlak kleiner */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* verdeelt foto en tekst */
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-container {
+    width: 100%;
+    height: 130px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.screenshot-box p {
+    font-size: 14px;
+    color: var(--text-color);
+    margin: 4px 0 8px 0;
+}
+
+
+
+/* Learn Grid */
+.learn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.learn-box {
+    background: var(--snd-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid var(--main-color);
+}
+
+.learn-box i {
+    font-size: 35px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}

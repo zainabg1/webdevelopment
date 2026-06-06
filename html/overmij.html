@@ -36,8 +36,14 @@
                 Ik leer snel, werk graag gestructureerd en haal veel voldoening uit het creëren van iets waar ik trots op kan zijn.
                 Deze portfolio is een plek waar ik mijn reis als developer documenteer.
             </p>
+            <p id="more-text" class="hidden">
+    Ik ben begonnen met webdevelopment omdat ik het geweldig vind om ideeën om te zetten
+    in iets dat echt werkt. Ik werk graag met HTML, CSS en JavaScript en ik blijf mezelf
+    ontwikkelen door nieuwe technieken te leren en projecten te bouwen.
+</p>
 
-            <a href="#" class="btn">Read More</a>
+
+           <a href="#" class="btn" id="read-more-btn">Read More</a>
         </div>
 
         <div class="about-img">
@@ -59,5 +65,19 @@
   </p>
 </footer>
 </body>
+
+<script>
+    const btn = document.getElementById("read-more-btn");
+    const moreText = document.getElementById("more-text");
+
+    btn.addEventListener("click", function(e) {
+        e.preventDefault();
+        moreText.classList.toggle("hidden");
+
+        btn.textContent = moreText.classList.contains("hidden")
+            ? "Read More"
+            : "Read Less";
+    });
+</script>
 
 </html>
