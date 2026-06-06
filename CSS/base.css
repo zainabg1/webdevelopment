@@ -1,41 +1,42 @@
 :root {
-    /* Basis kleuren */
-    --bg-color: #F2F2F2;
-    --snd-bg-color: #F2C4D0;
-    --text-color: #400101;
-    --main-color: #D9738E;
-    --dark-color: #0D0D0D;
+    /* ===== KLEURENPALET (Design System) ===== */
+    --bg-color: #F2F2F2;          /* lichte achtergrondkleur */
+    --snd-bg-color: #F2C4D0;      /* zachte roze achtergrond */
+    --text-color: #400101;        /* donkerbruine tekstkleur */
+    --main-color: #D9738E;        /* hoofdaccent (roze) */
+    --dark-color: #0D0D0D;        /* bijna zwart voor sterke contrasten */
 
-    /* Extra kleuren voor design-system */
-    --accent-color: #B84A62;       /* donkerder roze voor contrast */
-    --border-color: #E5A7B8;       /* zachte border */
-    --muted-text: #6A4A4A;         /* subtiele tekstkleur */
+    /* Extra kleuren voor variatie en UI-elementen */
+    --accent-color: #B84A62;      /* donkerder roze voor knoppen/hover */
+    --border-color: #E5A7B8;      /* subtiele borderkleur */
+    --muted-text: #6A4A4A;        /* gedempte tekstkleur voor secundaire info */
 
-    /* Schaduwen */
-    --shadow-soft: 0 4px 12px rgba(0,0,0,0.08);
-    --shadow-strong: 0 8px 24px rgba(0,0,0,0.15);
+    /* ===== SCHADUWEN ===== */
+    --shadow-soft: 0 4px 12px rgba(0,0,0,0.08);   /* zachte schaduw */
+    --shadow-strong: 0 8px 24px rgba(0,0,0,0.15); /* sterkere schaduw */
 
-    /* Radii */
+    /* ===== RONDE HOEKEN ===== */
     --radius-sm: 6px;
     --radius-md: 10px;
     --radius-lg: 18px;
 
-    /* Spacing */
+    /* ===== SPACING SYSTEM ===== */
     --space-xs: 4px;
     --space-sm: 8px;
     --space-md: 16px;
     --space-lg: 32px;
     --space-xl: 48px;
 
-    /* Transitions */
+    /* ===== TRANSITIES ===== */
     --transition-fast: 0.2s ease;
     --transition-slow: 0.4s ease;
 
-    /* Typography */
+    /* ===== FONTS ===== */
     --font-main: "Poppins", sans-serif;
     --font-heading: "Poppins", sans-serif;
 }
 
+/* basis van website */
 * {
     margin: 0;
     padding: 0;
@@ -47,39 +48,42 @@
     font-family: system-ui, -apple-system, sans-serif;
 }
 
+/* body styling */
 body {
     background: var(--bg-color);
     color: var(--text-color);
 }
 
-/* Wrapper voor ALLE pagina’s */
+/* Wrapper voor consistente pagina-breedte */
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+/* Basis HTML instellingen */
 html {
     font-size: 16px;
     overflow-x: hidden;
 }
 
+/* Standaard spacing voor secties */
 section {
     min-height: 100vh;
     padding: 100px 0 32px;
 }
-/* herbruikbare componenten */
+
+/* ===== ALGEMENE BUTTON STYLING ===== */
 .btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
     padding: 10px 18px;
-    border-radius: 999px;
+    border-radius: 999px; /* volledig rond */
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
     background: transparent;
     cursor: pointer;
-    text-decoration: none;
     font-weight: 500;
     transition: var(--transition-fast);
 }
@@ -90,8 +94,9 @@ section {
     transform: translateY(-1px);
 }
 
+/* ===== PROJECT CARDS ===== */
 .project-card {
-    background: rgba(15,23,42,0.9);
+    background: rgba(15,23,42,0.9); /* donkerblauw/zwart transparant */
     border-radius: var(--radius-lg);
     padding: 18px 20px;
     box-shadow: var(--shadow-soft);
@@ -104,6 +109,7 @@ section {
     border-color: var(--accent-color);
 }
 
+/* Highlights onder projecten */
 .highlights {
     display: flex;
     flex-wrap: wrap;
@@ -119,7 +125,7 @@ section {
     font-size: 0.8rem;
 }
 
-/* Header */
+/* ===== HEADER ===== */
 .header {
     position: fixed;
     top: 0;
@@ -135,7 +141,7 @@ section {
     transition: 0.3s ease;
 }
 
-/* Logo */
+/* Logo styling */
 .logo {
     font-size: 34px;
     font-weight: 700;
@@ -149,7 +155,7 @@ section {
     opacity: 0.9;
 }
 
-/* Navbar */
+/* ===== NAVIGATIE ===== */
 .navbar {
     display: flex;
     gap: 40px;
@@ -170,7 +176,7 @@ section {
     border-bottom: 2px solid var(--dark-color);
 }
 
-/* Menu icon (mobiel) */
+/* Mobiel menu icoon */
 #menu-icon {
     font-size: 40px;
     color: var(--bg-color);
@@ -178,7 +184,7 @@ section {
     display: none;
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
 .footer {
     width: 100%;
     padding: 40px 0;
@@ -186,7 +192,7 @@ section {
     text-align: center;
 }
 
-/* Social icons */
+/* Social media iconen */
 .footer .social {
     margin-bottom: 20px;
 }
@@ -211,7 +217,7 @@ section {
     box-shadow: 0 0 15px var(--main-color);
 }
 
-/* Copyright */
+/* Copyright tekst */
 .footer .copyright {
     font-size: 16px;
     color: var(--text-color);

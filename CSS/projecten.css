@@ -1,39 +1,45 @@
+/* ===== TITEL VAN DE PROJECTENPAGINA ===== */
 .projecten h2 {
     text-align: center;
-    font-size: 64px; 
+    font-size: 64px;                     /* grote opvallende titel */
     margin-bottom: 80px;
     color: var(--text-color);
 }
 
+/* ===== CONTAINER MET ALLE PROJECTKAARTEN ===== */
 .projecten-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 32px;
+    flex-wrap: wrap;                     /* kaarten breken netjes op mobiel */
+    gap: 32px;                           /* ruimte tussen kaarten */
 }
 
+/* ===== INDIVIDUELE PROJECTKAART ===== */
 .projecten-container .projecten-box {
-    flex: 1 1 300px; /* kleinere kaarten */
-    background: var(--snd-bg-color);
+    flex: 1 1 300px;                     /* kaarten worden kleiner bij kleine schermen */
+    background: var(--snd-bg-color);     /* zachte roze achtergrond */
     padding: 48px 24px;
     border-radius: 24px;
     text-align: center;
-    border: 3px solid var(--bg-color);
+    border: 3px solid var(--bg-color);   /* lichte border */
     transition: 0.3s ease;
 }
 
+/* Hover: border wordt roze + kaart wordt iets groter */
 .projecten-container .projecten-box:hover {
     border-color: var(--main-color);
     transform: scale(1.03);
 }
 
+/* Icon bovenaan elke projectkaart */
 .projecten-box i {
     font-size: 80px;
     color: var(--main-color);
     margin-bottom: 16px;
 }
 
+/* Titel van de categorie */
 .projecten-box h3 {
     font-size: 32px;
     font-weight: 700;
@@ -41,6 +47,7 @@
     margin-bottom: 16px;
 }
 
+/* Beschrijving onder de titel */
 .projecten-box p {
     font-size: 18px;
     margin: 16px 24px 32px;
@@ -48,6 +55,7 @@
     line-height: 1.6;
 }
 
+/* ===== BUTTON ===== */
 .btn {
     display: inline-block;
     padding: 12px 36px;
@@ -59,6 +67,7 @@
     transition: 0.3s ease;
 }
 
+/* Hover: donkere kleur + glow */
 .btn:hover {
     background-color: var(--text-color);
     box-shadow: 0 0 20px var(--main-color);

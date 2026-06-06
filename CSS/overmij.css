@@ -1,9 +1,10 @@
+/* ===== OVER MIJ SECTIE ===== */
 .about {
-    padding: 120px 0;
-    background-color: var(--bg-color);
+    padding: 120px 0;                     /* ruime verticale spacing */
+    background-color: var(--bg-color);    /* lichte achtergrond */
 }
 
-/* Titel */
+/* Titel bovenaan de sectie */
 .about .heading {
     font-size: 64px;
     text-align: center;
@@ -11,17 +12,17 @@
     color: var(--text-color);
 }
 
-/* Container voor tekst + foto */
+/* Container voor tekst + foto naast elkaar */
 .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 40px;                             /* ruimte tussen tekst en foto */
 }
 
-/* Tekstgedeelte */
+/* ===== TEKSTGEDEELTE ===== */
 .about-content {
-    max-width: 600px;
+    max-width: 600px;                      /* tekst niet te breed maken */
 }
 
 .about-content h3 {
@@ -32,21 +33,22 @@
 
 .about-content p {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.6;                      /* prettige leesbaarheid */
     margin-bottom: 32px;
     color: var(--text-color);
 }
 
-/* Afbeelding */
+/* ===== AFBEELDING ===== */
 .about-img img {
     width: 320px;
-    border-radius: 50%;
-    border: 2px solid var(--main-color);
+    border-radius: 50%;                    /* ronde profielfoto */
+    border: 2px solid var(--main-color);   /* roze rand */
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease;
     cursor: pointer;
 }
 
+/* Glow-effect bij hover */
 .about-img img:hover {
     box-shadow:
         0 0 25px var(--main-color),
@@ -54,7 +56,7 @@
         0 0 45px var(--main-color);
 }
 
-/* Button */
+/* ===== BUTTON ===== */
 .btn {
     display: inline-block;
     padding: 12px 36px;
@@ -66,11 +68,13 @@
     transition: 0.3s ease;
 }
 
+/* Hover: donkere kleur + glow */
 .btn:hover {
     background-color: var(--text-color);
     box-shadow: 0 0 20px var(--main-color);
 }
 
+/* Verborgen tekst voor Read More functionaliteit */
 .hidden {
     display: none;
 }

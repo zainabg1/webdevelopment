@@ -1,21 +1,22 @@
-/* Home sectie */
+/* ===== HOME SECTIE (hero) ===== */
 .home {
-    display: flex;
+    display: flex;                        /* afbeelding + tekst naast elkaar */
     justify-content: center;
     align-items: center;
-    gap: 60px; 
-    padding: 140px 0;
+    gap: 60px;                             /* ruimte tussen foto en tekst */
+    padding: 140px 0;                      /* extra ruimte boven/onder */
 }
 
-/* Afbeelding */
+/* ===== PROFIJLFOTO ===== */
 .home-img img {
     width: 260px;
-    border-radius: 50%;
+    border-radius: 50%;                    /* ronde profielfoto */
     box-shadow: 0 0 25px var(--main-color);
     margin-right: 20px;
-    transition: 0.4s ease;
+    transition: 0.4s ease;                 /* zachte hover-animatie */
 }
 
+/* Glow-effect bij hover */
 .home-img img:hover {
     box-shadow:
         0 0 25px var(--main-color),
@@ -23,16 +24,17 @@
         0 0 45px var(--main-color);
 }
 
+/* Kleine zweefanimatie (optioneel) */
 @keyframes floatImage {
     0% { transform: translateY(0); }
     50% { transform: translateY(-30px); }
     100% { transform: translateY(0); }
 }
 
-/* Tekstgedeelte */
+/* ===== TEKSTGEDEELTE ===== */
 .home-content {
-    max-width: 600px;
-    line-height: 1.6; /* tekst dichter bij elkaar */
+    max-width: 600px;                      /* tekst niet te breed maken */
+    line-height: 1.6;                      /* prettige leesbaarheid */
 }
 
 .home-content h1 {
@@ -51,11 +53,12 @@
     color: var(--text-color);
 }
 
+/* Accentkleur voor woorden */
 span {
     color: var(--main-color);
 }
 
-/* Social media icons */
+/* ===== SOCIAL MEDIA ICONEN ===== */
 .social-media {
     display: flex;
     gap: 20px;
@@ -76,6 +79,7 @@ span {
     transition: 0.3s ease;
 }
 
+/* Hover: groter + omhoog + glow */
 .social-media a:hover {
     transform: scale(1.2) translateY(-8px);
     background-color: var(--main-color);
@@ -83,7 +87,7 @@ span {
     box-shadow: 0 0 25px var(--main-color);
 }
 
-/* Button */
+/* ===== BUTTON ===== */
 .btn {
     display: inline-flex;
     padding: 12px 36px;
@@ -96,8 +100,8 @@ span {
     transition: 0.3s ease;
 }
 
+/* Hover: donkere kleur + glow */
 .btn:hover {
     box-shadow: 0 0 20px var(--main-color);
     background-color: var(--text-color);
 }
-

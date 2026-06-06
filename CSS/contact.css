@@ -1,35 +1,35 @@
-/* Contactsectie */
+/* ===== CONTACTSECTIE ===== */
 .contact {
-    background: var(--bg-color);
-    padding: 120px 0;
+    background: var(--bg-color);   /* lichte achtergrond voor rust */
+    padding: 120px 0;              /* ruime verticale spacing */
 }
 
-/* Titel */
+/* Titel van de contactpagina */
 .contact h2 {
     text-align: center;
     font-size: 64px;
     margin-bottom: 48px;
-    color: var(--main-color);
+    color: var(--main-color);      /* roze accentkleur */
 }
 
-/* Formulier */
+/* ===== FORMULIER ===== */
 .contact form {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px;              /* breedte van het formulier */
+    margin: 0 auto;                /* centreren */
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 24px;                     /* ruimte tussen velden */
 }
 
-/* Inputrijen */
+/* Rijen met twee inputvelden naast elkaar */
 .input-inbox,
 .input-box {
     display: flex;
     gap: 16px;
-    flex-wrap: wrap;
+    flex-wrap: wrap;               /* zorgt dat velden onder elkaar vallen op mobiel */
 }
 
-/* Inputvelden */
+/* Algemene styling voor alle inputvelden en textarea */
 .contact form input,
 .contact form textarea {
     width: 100%;
@@ -38,25 +38,25 @@
     color: var(--text-color);
     background: var(--bg-color);
     border-radius: 12px;
-    border: 3px solid var(--main-color);
+    border: 3px solid var(--main-color);  /* roze border */
     transition: 0.3s ease;
-    resize: none;
+    resize: none;                          /* voorkomt dat textarea groter wordt */
 }
 
-/* Hover-effect */
+/* Hover-effect voor inputvelden */
 .contact form input:hover,
 .contact form textarea:hover {
-    border-color: var(--text-color);
+    border-color: var(--text-color);       /* donkerdere kleur bij hover */
 }
 
-/* Berichtveld */
+/* Specifieke hoogte voor het berichtveld */
 .contact form textarea {
     height: 200px;
 }
 
-/* Verstuurknop */
+/* ===== VERSTUURKNOP ===== */
 .btn {
-    align-self: center;
+    align-self: center;                    /* knop centreren */
     padding: 12px 36px;
     background: var(--main-color);
     border-radius: 48px;
@@ -66,7 +66,8 @@
     transition: 0.3s ease;
 }
 
+/* Hover-effect voor de knop */
 .btn:hover {
-    background-color: var(--text-color);
+    background-color: var(--text-color);   /* donkerder bij hover */
     box-shadow: 0 0 20px var(--main-color);
 }
