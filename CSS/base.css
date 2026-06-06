@@ -1,0 +1,219 @@
+:root {
+    /* Basis kleuren */
+    --bg-color: #F2F2F2;
+    --snd-bg-color: #F2C4D0;
+    --text-color: #400101;
+    --main-color: #D9738E;
+    --dark-color: #0D0D0D;
+
+    /* Extra kleuren voor design-system */
+    --accent-color: #B84A62;       /* donkerder roze voor contrast */
+    --border-color: #E5A7B8;       /* zachte border */
+    --muted-text: #6A4A4A;         /* subtiele tekstkleur */
+
+    /* Schaduwen */
+    --shadow-soft: 0 4px 12px rgba(0,0,0,0.08);
+    --shadow-strong: 0 8px 24px rgba(0,0,0,0.15);
+
+    /* Radii */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 18px;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-slow: 0.4s ease;
+
+    /* Typography */
+    --font-main: "Poppins", sans-serif;
+    --font-heading: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Wrapper voor ALLE pagina’s */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    padding: 100px 0 32px;
+}
+/* herbruikbare componenten */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    background: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+.btn:hover {
+    background: var(--accent-color);
+    color: #020617;
+    transform: translateY(-1px);
+}
+
+.project-card {
+    background: rgba(15,23,42,0.9);
+    border-radius: var(--radius-lg);
+    padding: 18px 20px;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(148,163,184,0.25);
+    transition: var(--transition-fast);
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-color);
+}
+
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.highlights span {
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(15,118,110,0.15);
+    border: 1px solid rgba(45,212,191,0.4);
+    font-size: 0.8rem;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: var(--main-color);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+/* Logo */
+.logo {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--bg-color);
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar a {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--bg-color);
+    transition: 0.3s ease;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--dark-color);
+    border-bottom: 2px solid var(--dark-color);
+}
+
+/* Menu icon (mobiel) */
+#menu-icon {
+    font-size: 40px;
+    color: var(--bg-color);
+    cursor: pointer;
+    display: none;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--snd-bg-color);
+    text-align: center;
+}
+
+/* Social icons */
+.footer .social {
+    margin-bottom: 20px;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+/* Copyright */
+.footer .copyright {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-top: 10px;
+}
